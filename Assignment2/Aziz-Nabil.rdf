@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 xml:base="https://github.com/Znabil/Class01#"
-    xmlns="https://github.com/Znabil/attributes#"
-   >
+    xmlns="https://github.com/Znabil/attributes#" >
     
-    <rdf:Description rdf:about="#Class01">
+    <rdf:Description rdf:about="Class01">
       <includes rdf:resource="#Sensor029"/>
       <includes rdf:resource="#Computer101"/>
     </rdf:Description>
@@ -15,7 +14,7 @@ xml:base="https://github.com/Znabil/Class01#"
 
     <rdf:Description rdf:about="#Measurement8401">
     <hasTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#Celsius">29</hasTemperature>     
-    <atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#DateTime">2010-06-12 
+    <atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-12 
  T12:00:12</atTime>     
     </rdf:Description>
 
@@ -24,7 +23,7 @@ xml:base="https://github.com/Znabil/Class01#"
     </rdf:Description>
 
 <rdf:Description rdf:about="#User10A">
-    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#Name">Pedro</hasName>     
+    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedro</hasName>     
        
     </rdf:Description>
 
