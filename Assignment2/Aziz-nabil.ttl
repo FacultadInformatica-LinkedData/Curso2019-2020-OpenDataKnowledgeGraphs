@@ -1,12 +1,12 @@
 @prefix ns0: <https://github.com/Znabil/attributes#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://github.com/Znabil/Class01> ns0:includes <https://github.com/Znabil/Class01#Sensor029>, <https://github.com/Znabil/Class01#Computer101> .
-<https://github.com/Znabil/Class01#Sensor029> ns0:hasMeasurement <https://github.com/Znabil/Class01#Measurement8401> .
-<https://github.com/Znabil/Class01#Measurement8401>
+<https://github.com/Znabil/Class01> ns0:includes <https://github.com/Znabil/Sensor029>, <https://github.com/Znabil/Computer101> .
+<https://github.com/Znabil/Sensor029> ns0:hasMeasurement <https://github.com/Znabil/Measurement8401> .
+<https://github.com/Znabil/Measurement8401>
   ns0:hasTemperature "29"^^xsd:Celsius ;
   ns0:atTime """2010-06-12 
  T12:00:12"""^^xsd:dateTime .
 
-<https://github.com/Znabil/Class01#Computer101> ns0:hasOwner <https://github.com/Znabil/Class01#User10A> .
-<https://github.com/Znabil/Class01#User10A> ns0:hasName "Pedro"^^xsd:string .
+<https://github.com/Znabil/Computer101> ns0:hasOwner <https://github.com/Znabil/User10A> .
+<https://github.com/Znabil/User10A> ns0:hasName "Pedro"^^xsd:string .
