@@ -17,7 +17,10 @@ public class Task05
 {
 	public static void main(String args[])
 	{
+		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
+		
 		String filename = "resources/example4.rdf";
+		
 		
 		// Create an empty model
 		OntModel model = ModelFactory.createOntologyModel(OntModelSpec.RDFS_MEM);

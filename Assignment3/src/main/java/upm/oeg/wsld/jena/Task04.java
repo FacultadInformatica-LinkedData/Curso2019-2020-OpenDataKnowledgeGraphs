@@ -30,6 +30,8 @@ public class Task04
 	
 	public static void main(String args[])
 	{
+		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
+		
 		String filename = "resources/example3.rdf";
 		
 		// Create an empty model
@@ -59,6 +61,8 @@ public class Task04
 			Resource subj = (Resource) binding.get("Subject");
 		    System.out.println("Subject: "+subj.getURI());
 		}
+		
+
 		
 		// ** TASK 4.1: List all the resources with the property "vcard:FN" and their full names **
 		queryString = 

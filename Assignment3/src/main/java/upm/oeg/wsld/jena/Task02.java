@@ -25,6 +25,9 @@ public class Task02
 	 */
 	public static void main(String args[])
 	{
+		
+		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
+		
 		// Create an empty model
 		Model model = ModelFactory.createDefaultModel();
 
@@ -46,11 +49,16 @@ public class Task02
 		janeSmith.addLiteral(VCARD.EMAIL, "jSmith@somewhere.com");
 
 		// ** TASK 2.3: Add Jane as a person who John knows through an object property from the FOAF vocabulary**
-//				Property knows = model.createProperty(foafNS+"knows");
-//				johnSmith.addProperty(knows, janeSmith);
+		Property knows = model.createProperty(foafNS+"knows");
+		johnSmith.addProperty(knows, janeSmith);
+				
+	    // ** Try self **
+//				Property likes = model.createProperty(foafNS+"likes");
+//				johnSmith.addProperty(likes, janeSmith);
+//				does not work
 
 		johnSmith.addProperty(FOAF.knows, janeSmith);
 
-		model.write(System.out, "RDF/XML-ABBREV");
+		model.write(System.out, "TURTLE");
 	}
 }

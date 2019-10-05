@@ -1,5 +1,6 @@
 package upm.oeg.wsld.jena;
 
+
 import java.io.InputStream;
 
 import org.apache.jena.rdf.model.Model;
@@ -29,6 +30,9 @@ public class Task03
 	
 	public static void main(String args[])
 	{
+		
+		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
+		
 		String filename = "resources/example3.rdf";
 		
 		// Create an empty model

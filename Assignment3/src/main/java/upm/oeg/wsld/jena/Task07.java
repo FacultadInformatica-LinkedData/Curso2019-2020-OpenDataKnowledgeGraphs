@@ -15,6 +15,8 @@ import org.apache.jena.util.iterator.ExtendedIterator;
  * @author elozano
  * @author isantana
  *
+ * @student Charlotte Felius
+ * @studentnr 19A238
  */
 public class Task07
 {
@@ -22,6 +24,9 @@ public class Task07
 	
 	public static void main(String args[])
 	{
+		
+		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
+		
 		String filename = "resources/example6.rdf";
 		
 		// Create an empty model
@@ -54,13 +59,40 @@ public class Task07
 		{
 			OntClass subclass = (OntClass) subclasses.next();
 			System.out.println("Subclass of Person: "+subclass.getURI());
+			
+			ExtendedIterator indinstances = subclass.listInstances();
+			
+			while (indinstances.hasNext())
+			{
+				Individual indinst = (Individual) indinstances.next();
+				System.out.println("Instance of "+subclass.getURI()+": "+indinst.getURI());
+			}
+			
+			if(subclass.hasSubClass()==true) {
+				ExtendedIterator indirectclass = subclass.listSubClasses();
+				
+				while (indirectclass.hasNext())
+				{
+					OntClass subsubclass = (OntClass) indirectclass.next();
+					System.out.println("Subclass of "+subclass.getURI()+": "+subsubclass.getURI());
+					
+					ExtendedIterator subinstances = subclass.listInstances();
+					
+					while (subinstances.hasNext())
+					{
+						Individual subinst = (Individual) subinstances.next();
+						System.out.println("Instance of "+subsubclass.getURI()+": "+subinst.getURI());
+					}
+				}
+				}
 		}
-		
+		}
 
 		
 		
-		// ** TASK 7.3: Make the necessary changes to get as well indirect instances and subclasses. TIP: you need some inference... **
+		// ** TASK 7.3: Make the necessary changes to get as well >>>>indirect<<<< instances and subclasses. **
+		// ** TIP: you need some inference... **
 		
 	
 	}
-}
+	
