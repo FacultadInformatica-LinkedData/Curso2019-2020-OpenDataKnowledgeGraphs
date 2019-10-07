@@ -1,0 +1,33 @@
+License analysis steps:
+
+1.	To identify the authoritative dataset publisher. Prior knowledge of who is the rightsholder is essential to assess if that data has been published by (or in behalf of) the rightsholder or an authorized distributor.
+
+Right holder - Editor:
+Ayuntamiento de Madrid
+
+Responsable Unit:
+Dirección General de la Policía Municipal
+
+2.	To find the applicable license. Once having identified the authoritative dataset publisher, and assuming an access to data is obtained, the following places can be checked to determine the license:
+
+a.	Browse the web page hosting the data. Typically, licensing information is provided as a text in the HTML footer (possible in separated page), as a well-known icon (e.g., Creative Commons), or as a combination of both.
+
+License
+https://datos.madrid.es/egob/catalogo/aviso-legal
+Aspects that takes into account (General conditions): 
+Autorización de reutilización y cesión no exclusiva de derechos de propiedad intelectual
+Condiciones generales para la reutilización
+Exclusión de responsabilidad
+Responsabilidad de las personas y/o empresas que reutilicen datos
+
+b.	Browse the dataset metadata. For example, for RDF data, looking in the VoiD/DCAT description for structured information. DublinCore license, DublinCore rights, or XHTML license are the most common licensing elements.
+
+https://datos.madrid.es/FWProjects/egob/Catalogo/Seguridad/Ficheros/Estructura_DS_Accidentes_trafico_2010_2018.pdf
+
+c.	Inspect the dataset, as licensing information is sometimes present within the data. Comments in XML format, explicit DublinCore labels within the data, and simple textual notes are not uncommon.
+
+d.	Contact the dataset publisher if the above steps have not proven sufficient, or if doubts exist about the applicable license.
+
+Does not apply
+
+3. To read the license and determine if the terms are satisfactory. Licenses are legal texts written with a particular style, but they are usually not long in extent and are easily understandable. If the intended uses of the dataset match the waived rights in the license, and the required conditions are satisfied, then the resource can be used.
