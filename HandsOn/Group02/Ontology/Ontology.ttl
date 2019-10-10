@@ -1,191 +1,77 @@
-Prefix xsd:
-Prefix owl:
-Prefix xml:
-Prefix rdf:
-Prefix dc:
-Prefix rdfs:
-Prefix ra:
-Prefix:
+@prefix : <http://purl.org/linked-data/accidents-in-Madrid/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@Prefix xml: <http://www.w3.org/XML/1998/namespace>
+@Prefix dc: <http://purl.org/dc/elements/1.1/>
+@Prefix ra: <ra:http://www.w3.org/2012/7/ra3.owl#>
 
-Ontology:
+#Classes
 
-AnnotationProperty: rdfs:comment
-Datatype: xsd:positiveInteger
-Datatype: xsd:anyURI
-Datatype: xsd:date
-Datatype: rdf:PlainLiteral
-Datatype: xsd:boolean
-Datatype: xsd:string
-Datatype: xsd:integer
+:Thing          rdf:type owl:Class .
+:LivingBeing    rdf:type owl:Class ;
+                owl:propertyDisjointWith : NonLivingThing .
+:NonLivingThing rdf:type owl:Class ;
+                owl:propertyDisjointWith : LivingThing .
+:Event          rdf:type owl:Class .
+:Location       rdf:type owl:Class .
+:Document       rdf:type owl:Class .
+:Person         rdf:type owl:Class .
+:Vehicle        rdf:type owl:Class .
+:Enviroment     rdf:type owl:Class .
 
+#ObjectProperties
 
-ObjectProperty: ra:isIn
+:isA              rdf:type owl:ObjectProperty .
+:itWasIn            rdf:type owl:ObjectProperty .
+:has              rdf:type owl:ObjectProperty .
+:suffered         rdf:type owl:ObjectProperty .
+:happened         rdf:type owl:ObjectProperty .
+:isPartOf         rdf:type owl:ObjectProperty .
+:ageRange         rdf:type owl:DataProperty .
+:vehicleCategory  rdf:type owl:DataProperty .
+:accidentType     rdf:type owl:DataProperty .
+:weatherCondition rdf:type owl:DataProperty .
+:surfaceCondition rdf:type owl:DataProperty .
+:relatedInjury    rdf:type owl:DataProperty .
+:address          rdf:type owl:DataProperty .
+:date             rdf:type owl:DataProperty .
+:parteID          rdf:type owl:DataProperty .
+:numberOfVictims  rdf:type owl:DataProperty .
 
-    Annotations:
-        rdfs:comment "anything can be in anything"@en
-    EquivalentTo:
-        ra:isOn
-    Domain:
-        owl:Thing
-    Range:
-        owl:Thing
+#Domain and ranges
 
-ObjectProperty: ra:isOn
-
-    EquivalentTo:
-        ra:isIn
-    Domain:
-        owl:Thing
-    Range:
-        owl:Thing
-
-ObjectProperty: ra:location
-
-    Domain:
-        ra:Event
-    Range:
-        ra:Location
-
-ObjectProperty: ra:isPartOf
-
-    Domain:
-        owl:Thing
-    Range:
-        owl:Thing
-
-ObjectProperty: ra:involvedIn
-
-    Domain:
-        owl:Thing
-    Range:
-        ra:Event
-
-DataProperty: ra:ageRange
-
-    Annotations:
-        rdfs:comment "age at event time"
-    Range:
-        xsd:string
-
-DataProperty: ra:gender
-
-    Annotations:
-        rdfs:comment "gender"
-    Range:
-        xsd:{men, women, not assign)
-
-
-
-DataProperty: ra:vehicleCategory
-
-    Domain:
-        ra:Vehicle
-       Range:
-        {"bicycle" , "bus" , "car" , "motocycle" , "truck"}
-
-
-DataProperty: ra:accidentType
-
-    Domain:
-        ra:event
-     Range:
-        {"fall" , "crush"}
-
-
-DataProperty: ra:weatherCondition
-
-    Domain:
-        ra:enviroment
-    Range:
-        {"earthquake" , "flood" , "ice" , "mud" , "normal" , "rain" , "smoke" , "snow" , "wind"}
-
-DataProperty: ra:surfaceCondition
-
-    Domain:
-        ra:enviroment
-    Range:
-        {"wet" , "dry" , "oil"}
-
-DataProperty: ra:relatedInjury
-
-    Annotations:
-        rdfs:comment "use some kind of existing classification"
-    Domain:
-        ra:LivingBeing
-    Range:
-        {"fatal" , "light" , "none" , "severe"}
-
-DataProperty: ra:address
-
-    Domain:
-        ra:Location
-    Range:
-        xsd:string
-
-DataProperty: ra:date
-
-    Domain:
-        ra:notLivingthing
-     Range:
-        xsd:date
-
-
-
-
-DataProperty: ra:ParteID
-
-    Domain:
-        owl:Thing
-    Range:
-        xsd:string
-
-DataProperty: ra:numberOfVictims
-
-    Domain:
-        owl:event
-    Range:
-        xsd:integer
-
-Class: owl:Thing
-
-
-Class: ra:LivingBeing
-
-    DisjointWith:
-        ra:NonLivingThing
-
-Class: ra:Event
-
-    SubClassOf:
-        ra:NonLivingThing
-
-Class: ra:Location
-
-    SubClassOf:
-        ra:NonLivingThing
-
-Class: ra:Document
-
-    SubClassOf:
-        ra:NonLivingThing
-Class: ra:Person
-
-    SubClassOf:
-        ra:LivingBeing
-
-Class: ra:Vehicle
-
-    SubClassOf:
-        ra:NonLivingThing
-
-    HasKey:
-        ra:vehicleID
-
-
-Class: ra:NonLivingThing
-
-    Annotations:
-        rdfs:comment "Top class for non living thing like vehicle, robot, etc"
-
-    DisjointWith:
-        ra:LivingBeing
+:isA              rdfs:domain :Thing ;
+                  rdfs:range  :Thing .
+:itWasIn          rdfs:domain :Thing ;
+                  rdfs:range  :Location .
+:has              rdfs:domain :Person ;
+                  rdfs:range  :Age .
+:suffered         rdfs:domain :Person ;
+                  rdfs:range  :Injury .
+:happened         rdfs:domain :Thing ;
+                  rdfs:range  :Date .
+:isPartOf         rdfs:domain :Thing ;
+                  rdfs:range  :Thing .
+:ageRange         rdfs:domain :Person ;
+                  rdfs:range  xsd:integer .
+:vehicleCategory  rdfs:domain :Vehicle ;
+                  rdfs:range  {"bicycle" , "bus" , "car" ,
+                  "motocycle" , "truck"} .
+:accidentType     rdfs:domain :Event ;
+                  rdfs:range  {"fall" , "crush"} .
+:weatherCondition rdfs:domain :Enviroment ;
+                  rdfs:range  {"rain" , "snow" , "hail"} .
+:surfaceCondition rdfs:domain :Enviroment ;
+                  rdfs:range  {"wet" , "dry" , "oil"} .
+:relatedInjury    rdfs:domain :Person ;
+                  rdfs: range {"fatal" , "light" , "none" , "severe"} .
+:address          rdfs:domain :Location ;
+                  rdfs:range  xsd:string .
+:date             rdfs:domain :NonLivingThing ;
+                  rdfs:range  xsd:date .
+:parteID          rdfs:domain :Document ;
+                  rdfs:range  xsd:string .
+:numberOfVictims  rdf:domain  :Event ;
+                  rdfs:range  xsd:integer.
