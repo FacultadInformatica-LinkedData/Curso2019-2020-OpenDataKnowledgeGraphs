@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@Prefix xml: <http://www.w3.org/XML/1998/namespace>
-@Prefix dc: <http://purl.org/dc/elements/1.1/>
-@Prefix ra: <ra:http://www.w3.org/2012/7/ra3.owl#>
+@prefix xml: <http://www.w3.org/XML/1998/namespace>
+@prefix dc: <http://purl.org/dc/elements/1.1/>
+@prefix ra: <ra:http://www.w3.org/2012/7/ra3.owl#>
 
 #Classes
 
