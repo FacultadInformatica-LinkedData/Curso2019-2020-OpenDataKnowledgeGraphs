@@ -1,0 +1,224 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Pza.+de+Espa%C3%B1a>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Plaza de España";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "635"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079004";
+  owl:sameAs <https://www.wikidata.org/wiki/Q1326261> .
+
+<https://www.wikidata.org/wiki/Q1326261> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Escuelas+Aguirre>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/ Alcalá";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "670"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079008";
+  owl:sameAs <https://www.wikidata.org/wiki/Q2424746> .
+
+<https://www.wikidata.org/wiki/Q2424746> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Avda.+Ram%C3%B3n+y+Cajal>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Avda. Ramón y Cajal";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "708"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079011";
+  owl:sameAs <https://www.wikidata.org/wiki/Q30467128> .
+
+<https://www.wikidata.org/wiki/Q30467128> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Arturo+Soria>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/ Arturo Soria";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "693"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079016";
+  owl:sameAs <https://www.wikidata.org/wiki/Q8255504> .
+
+<https://www.wikidata.org/wiki/Q8255504> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Villaverde>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/ Juan Peñalver";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "604"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079017" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Farolillo>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/ Farolillo";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "630"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079018" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Casa+de+Campo>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Casa de Campo";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "642"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079024";
+  owl:sameAs <https://www.wikidata.org/wiki/Q1046524> .
+
+<https://www.wikidata.org/wiki/Q1046524> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Barajas+Pueblo>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/. Júpiter, 21";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "621"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079027" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Pza.+del+Carmen>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Plaza del Carmen";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "659"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079035";
+  owl:sameAs <https://www.wikidata.org/wiki/Q6080406> .
+
+<https://www.wikidata.org/wiki/Q6080406> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Moratalaz>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Avda. Moratalaz";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "685"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079036";
+  owl:sameAs <https://www.wikidata.org/wiki/Q2076109> .
+
+<https://www.wikidata.org/wiki/Q2076109> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Cuatro+Caminos>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Avda. Pablo Iglesias";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "698"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079038";
+  owl:sameAs <https://www.wikidata.org/wiki/Q28045035> .
+
+<https://www.wikidata.org/wiki/Q28045035> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Barrio+del+Pilar>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Avda. Betanzos";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "674"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079039";
+  owl:sameAs <https://www.wikidata.org/wiki/Q671341> .
+
+<https://www.wikidata.org/wiki/Q671341> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Vallecas>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/ Arroyo del Olivar";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "677"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079040";
+  owl:sameAs <https://www.wikidata.org/wiki/Q29561517> .
+
+<https://www.wikidata.org/wiki/Q29561517> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Mendez+Alvaro>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Pza. Amanecer Mendez Alvaro";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "599"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079047";
+  owl:sameAs <https://www.wikidata.org/wiki/Q5553104> .
+
+<https://www.wikidata.org/wiki/Q5553104> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Castellana>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/ Jose Gutierrez Abascal";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "676"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079048" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Parque+del+Retiro>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Paseo Venezuela";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "662"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079049" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Plaza+Castilla>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Plaza Castilla";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "728"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079050";
+  owl:sameAs <https://www.wikidata.org/wiki/Q786291> .
+
+<https://www.wikidata.org/wiki/Q786291> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Ensanche+de+Vallecas>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Avda. La Gavia";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "627"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079054";
+  owl:sameAs <https://www.wikidata.org/wiki/Q3820879> .
+
+<https://www.wikidata.org/wiki/Q3820879> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Urb.+Embajada>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/ Riaño";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "618"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079055" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Pza.+Fern%C3%A1ndez+Ladreda>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    " Pza. Fernández Ladreda";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "604"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079056";
+  owl:sameAs <https://www.wikidata.org/wiki/Q16619985> .
+
+<https://www.wikidata.org/wiki/Q16619985> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Sanchinarro>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "C/ Princesa de Eboli";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "700"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079057" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/El+Pardo>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Avda. La Guardia";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "615"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079058";
+  owl:sameAs <https://www.wikidata.org/wiki/Q1632869> .
+
+<https://www.wikidata.org/wiki/Q1632869> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Juan+Carlos+I>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Parque Juan Carlos I";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "660"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079059";
+  owl:sameAs <https://www.wikidata.org/wiki/Q1583169> .
+
+<https://www.wikidata.org/wiki/Q1583169> a rdfs:type .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/Tres+Olivos>
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasAddress>
+    "Plaza Tres Olivos ";
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasElevation>
+    "715"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid/HasId> "28079060";
+  owl:sameAs <https://www.wikidata.org/wiki/Q608766> .
+
+<https://www.wikidata.org/wiki/Q608766> a rdfs:type .

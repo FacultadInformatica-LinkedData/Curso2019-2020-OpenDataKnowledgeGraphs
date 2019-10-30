@@ -1,0 +1,254 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lon",
+    "columnName": "lon"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lat",
+    "columnName": "lat"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column address to type Q7543083",
+    "columnName": "address",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://tools.wmflabs.org/openrefine-wikidata/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q7543083",
+        "name": "avenue"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item Arturo Soria (Q2481371) for cells containing \"C/ Arturo Soria\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "C/ Arturo Soria",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2481371",
+      "name": "Arturo Soria",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item Casa de Campo (Q1046524) for cells containing \"Casa de Campo\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "Casa de Campo",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1046524",
+      "name": "Casa de Campo",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item plaza del Carmen (Q6080406) for cells containing \"Plaza del Carmen\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "Plaza del Carmen",
+    "judgment": "matched",
+    "match": {
+      "id": "Q6080406",
+      "name": "plaza del Carmen",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item Moratalaz (Q2076109) for cells containing \"Avda. Moratalaz\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "Avda. Moratalaz",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2076109",
+      "name": "Moratalaz",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item Betanzos (Q671341) for cells containing \"Avda. Betanzos esq.\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "Avda. Betanzos esq.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q671341",
+      "name": "Betanzos",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item plaza de Castilla (Q786291) for cells containing \"Plaza Castilla\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "Plaza Castilla",
+    "judgment": "matched",
+    "match": {
+      "id": "Q786291",
+      "name": "plaza de Castilla",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item Calle del Arroyo del Olivar, Madrid (Q29561517) for cells containing \"C/ Arroyo del Olivar\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "C/ Arroyo del Olivar",
+    "judgment": "matched",
+    "match": {
+      "id": "Q29561517",
+      "name": "Calle del Arroyo del Olivar, Madrid",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item La Gavia (Q3820879) for cells containing \"Avda. La Gavia\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "Avda. La Gavia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3820879",
+      "name": "La Gavia",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item La Guardia (Q1632869) for cells containing \"Avda. La Guardia\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "Avda. La Guardia",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1632869",
+      "name": "La Guardia",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item Tres Olivos (Q5795544) for cells containing \"Plaza Tres Olivos \" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "Plaza Tres Olivos ",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5795544",
+      "name": "Tres Olivos",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match item Calle de Alcalá (Q2424746) for cells containing \"C/ Alcalá\" in column address",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "address",
+    "similarValue": "C/ Alcalá",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2424746",
+      "name": "Calle de Alcalá",
+      "score": 100,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  }
+]

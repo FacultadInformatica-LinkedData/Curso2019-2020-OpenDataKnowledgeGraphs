@@ -1,0 +1,12 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lon",
+    "columnName": "lon"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lat",
+    "columnName": "lat"
+  }
+]
