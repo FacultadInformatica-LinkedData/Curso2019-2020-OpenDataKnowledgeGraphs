@@ -1,0 +1,87 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Element.",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "PM10"
+      }
+    ],
+    "description": "Mass edit cells in column Element."
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PM10",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column PM10"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "PM10",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": 0
+      }
+    ],
+    "description": "Mass edit cells in column PM10"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "station",
+    "index": 0,
+    "description": "Move column station to position 0"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "station",
+    "expression": "grel:value+'/'+cells['date'].value",
+    "onError": "set-to-blank",
+    "newColumnName": "Measurement",
+    "columnInsertIndex": 1,
+    "description": "Create column Measurement at index 1 based on column station using expression grel:value+'/'+cells['date'].value"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Measurement",
+    "index": 0,
+    "description": "Move column Measurement to position 0"
+  }
+]

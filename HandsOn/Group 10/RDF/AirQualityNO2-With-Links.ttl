@@ -1,0 +1,175 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079004%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079004"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#29> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Not dangerous" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23+sameAs>
+    <https://www.wikidata.org/wiki/Q207895>;
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23+sameAs>
+    <https://www.wikidata.org/wiki/Q207895> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079008%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#40>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079008"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#40> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Not dangerous" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079011%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#41>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079011"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#41> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Long term exposure can cause chronic lung disease" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079016%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#35>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079016"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#35> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Not dangerous" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079017%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#27>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079017"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#27> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Not dangerous" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079018%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#27>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079018"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079024%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#25>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079024"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#25> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Not dangerous" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079027%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#37>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079027"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#37> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Not dangerous" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079035%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#43>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079035"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#43> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Long term exposure can cause chronic lung disease" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079036%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#26>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079036"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#26> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Not dangerous" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079038%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#30>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079038"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#30> <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
+    "Not dangerous" .
+
+<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079039%2F2018-03-01+01%3A00%3A00>
+  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Di%C3%B3xido+de+nitr%C3%B3geno%28NO_2%29>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
+    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
+    "28079039"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenOn>
+    "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
