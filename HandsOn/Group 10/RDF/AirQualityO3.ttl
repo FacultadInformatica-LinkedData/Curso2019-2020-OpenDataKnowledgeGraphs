@@ -1,193 +1,180 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix air: <http://www.airqualityopendata.org#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079004%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#0>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079004>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+<http://www.airqualityopendata.org#28079004%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079004;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:0;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#0> a rdf:literal;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Not+dangerous> .
+air:0 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Not+dangerous>
-  a rdf:literal .
+<http://www.airqualityopendata.org#Not+dangerous> a air:Disease .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00>
-  a <http://www.w3.org/1999/02/22-rdf-syntax-ns#date/time> .
+<http://www.airqualityopendata.org#Ozone(O_3)> a air:Element .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal> .
+air:28079004 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079004>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079008%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079008;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:52;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079008%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#52>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079008>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:52 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#52> a rdf:literal;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Not+dangerous> .
+air:28079008 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079008>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079011%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079011;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:0;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079011%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#0>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079011>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:28079011 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079011>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079016%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079016;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:54;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079016%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#54>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079016>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:54 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#54> a rdf:literal;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Not+dangerous> .
+air:28079016 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079016>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079017%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079017;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:49;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079017%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#49>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079017>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:49 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#49> a rdf:literal;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Not+dangerous> .
+air:28079017 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079017>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079018%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079018;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:57;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079018%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#57>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079018>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:57 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#57> a rdf:literal;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Not+dangerous> .
+air:28079018 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079018>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079024%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079024;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:55;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079024%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#55>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079024>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:55 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#55> a rdf:literal;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Not+dangerous> .
+air:28079024 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079024>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079027%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079027;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:54;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079027%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#54>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079027>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:28079027 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079027>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079035%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079035;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:29;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079035%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#29>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079035>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:29 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#29> a rdf:literal;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#canCause>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Not+dangerous> .
+air:28079035 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079035>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079036%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079036;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:0;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079036%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#0>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079036>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:28079036 a air:Station .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079036>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#rdf%3A+integer> .
+<http://www.airqualityopendata.org#28079038%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079038;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:0;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079038%2F2018-03-01+01%3A00%3A00>
-  a <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23+literal>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Observes>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#Ozone(O_3)>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#ResultsIn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#0>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#WasTakenBy>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#28079038>;
-  <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#wasTakenOn>
-    <http://www.semanticweb.org/pablopsoto/ontologies/2019/9/AirQualityMadrid#2018-03-01+01%3A00%3A00> .
+air:28079038 a air:Station .
+
+<http://www.airqualityopendata.org#28079039%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079039;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:59;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+air:59 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
+
+<http://www.airqualityopendata.org#Not+dangerous> a air:Disease .
+
+<http://www.airqualityopendata.org#Ozone(O_3)> a air:Element .
+
+air:28079039 a air:Station .
+
+<http://www.airqualityopendata.org#28079040%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079040;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:0;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+air:0 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
+
+air:28079040 a air:Station .
+
+<http://www.airqualityopendata.org#28079047%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079047;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:0;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+air:28079047 a air:Station .
+
+<http://www.airqualityopendata.org#28079048%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079048;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:0;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+air:28079048 a air:Station .
+
+<http://www.airqualityopendata.org#28079049%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079049;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:26;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+air:26 a air:Result;
+  air:canCause <http://www.airqualityopendata.org#Not+dangerous> .
+
+air:28079049 a air:Station .
+
+<http://www.airqualityopendata.org#28079050%2F2018-03-01+01%3A00%3A00> a air:Measurement;
+  air:isMeasuredBy air:28079050;
+  air:observes <http://www.airqualityopendata.org#Ozone(O_3)>;
+  air:resultsIn air:0;
+  air:wasTakenOn "2018-03-01 01:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+air:28079050 a air:Station .
